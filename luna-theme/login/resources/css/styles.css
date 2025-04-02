@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'Josefin Sans';
+	src:
+		url('../fonts/JosefinSans.ttf'),
+		url('../fonts/JosefinSans-Bold.ttf'),
+}
+
+:root {
+	--color-primary: hsl(190, 52%, 32%);
+	--color-secondary: hsl(42, 67%, 54%);
+	--color-tertiary: hsl(144, 14%, 65%);
+	--color-text: hsl(0, 0%, 100%);
+	--color-error: hsl(0, 80%, 65%);
+	--color-surface: hsl(0, 0%, 85%);
+
+	--font-weight-lg: 700;
+	--font-weight-sm: 400;
+
+	--font-size-xl: 36px;
+	--font-size-lg: 20px;
+	--font-size-md: 16px;
+	--font-size-sm: 14px;
+	
+	@media screen and (max-width: 782px) {
+		--font-size-xl: 20px;
+		--font-size-lg: 16px;
+		--font-size-md: 14px;
+		--font-size-sm: 12px;
+	}
+	
+	@media screen and (max-width: 425px) {
+		--font-size-xl: 16px;
+	  --font-size-lg: 14px;
+		--font-size-md: 12px;
+		--font-size-sm: 10px;
+	}
+}
+
+.login-pf, .login-pf body {
+	background: none;
+}
+
+h1 {
+	font-size: var(--font-size-xl) !important;
+	font-weight: var(--font-weight-lg) !important;
+	color: var(--color-text);
+}
+
+label {
+	font-size: var(--font-size-lg) !important;
+	font-weight: var(--font-weight-lg) !important;
+	color: var(--color-text);
+}
+
+a, a:hover {
+	color: var(--color-text);
+	font-weight: var(--font-weight-sm);
+}
+
+li {
+	color: var(--color-text);
+}
+
+p {
+	color: var(--color-text) !important;
+	font-size: var(--font-size-md);
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Josefin Sans', serif;
+	font-size: var(--font-size-lg);
+}
+
+div.login-pf-page {
+	padding-top: 0px;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@media only screen and (max-width: 782px) {
+		width: 60%;
+	}
+	@media only screen and (max-width: 425px) {
+		width: 70%;
+	}
+
+}
+
+div.card-pf {
+	background: var(--color-primary);
+	box-shadow: -15px 15px 0 0 var(--color-secondary), 15px -15px 0 0 var(--color-tertiary);
+	border-radius: 0 20px 20px 20px;
+	max-height: 90%;
+	overflow: auto;
+}
+
+div.login-pf-page div.login-pf-page-header {
+	margin-bottom: 0px;
+}
+

@@ -1,0 +1,36 @@
+/* FORM BUTTONS */
+div#kc-form-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* SETTINGS CONTAINER */
+div.login-pf-settings {
+	justify-content: center !important;
+}
+
+/* CONFIG TOTP PAGE */
+form#kc-totp-settings-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.form-group {
+		width: 100%;
+	}
+} 
+
+/* FORM OPTIONS WRAPPER */
+.pf-c-form-options-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* INFO PAGE */
+div#kc-info-message {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

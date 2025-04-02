@@ -1,0 +1,20 @@
+div.pf-c-alert {
+	border-top: none;
+
+	span {
+		color: var(--color-text);
+		text-align: center;
+	}	
+
+	&.alert-error {
+		background-color: var(--color-error) !important;
+	}
+
+	&.alert-warning {
+		background-color: var(--color-secondary) !important;
+	}
+
+	&.alert-info, &.alert-success {
+		background-color: var(--color-tertiary) !important;
+	}
+}

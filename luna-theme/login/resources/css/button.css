@@ -1,0 +1,8 @@
+.pf-c-button.pf-m-primary {
+	background-color: var(--color-surface);
+	width: auto;
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-lg);
+	color: var(--color-primary);
+	border-radius: 10px;
+}

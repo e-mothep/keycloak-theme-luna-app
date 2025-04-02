@@ -1,0 +1,6 @@
+{
+	"themes": [{
+		"name": "luna-theme",
+		"types": ["login", "email"]
+	}]
+}

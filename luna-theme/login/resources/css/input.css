@@ -1,0 +1,17 @@
+.pf-c-form-control[type="text"], .pf-c-form-control[type="password"] {
+	border-radius: 0 8px 8px 8px;
+	color: var(--color-primary);
+}
+
+.pf-c-form-control[aria-invalid=true] {
+	border-bottom-width: 0px;
+	background-image: none;
+}
+
+.pf-c-form-control:focus {
+	border-bottom-width: 0px;
+}
+
+.pf-c-form-control:focus-visible {
+	outline: none;
+}
