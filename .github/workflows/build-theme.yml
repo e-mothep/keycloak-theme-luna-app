@@ -1,0 +1,23 @@
+name: Build theme and release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version of the theme'
+        required: true
+        type: string
+
+jobs:
+  build-and-release:
+    runs-on: [self-host, linux, x64, webmethods]
+    steps
+      - name: Checkout
+        uses: action/checkout@v4
+      - name: Build theme JAR
+        run: jar cvf luna-theme.jar META-INF/* luna-theme/*
+      - name: Generate release
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: gh release create ${{ inputs.version }} luna-theme.jar
+        
