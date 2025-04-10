@@ -18,8 +18,13 @@ jobs:
         with:
           distribution: 'zulu'
           java-version: '21'
+      - name: Prepare for jar
+        shell: bash
+        run: |
+          mkdir theme
+          cp -r luna-theme/ theme/
       - name: Build theme JAR
-        run: jar cvf luna-theme.jar META-INF/* luna-theme/*
+        run: jar cvf luna-theme.jar META-INF/* theme/luna-theme/*
       - name: Generate release
         shell: bash
         env:
