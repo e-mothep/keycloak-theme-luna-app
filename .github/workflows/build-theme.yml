@@ -10,7 +10,7 @@ on:
 jobs:
   build-and-release:
     runs-on: [self-host, linux, x64, webmethods]
-    steps
+    steps:
       - name: Checkout
         uses: action/checkout@v4
       - name: Build theme JAR
