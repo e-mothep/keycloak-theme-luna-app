@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-and-release:
-    runs-on: [self-host, linux, x64, webmethods]
+    runs-on: [self-hosted, linux, x64, webmethods]
     steps:
       - name: Checkout
         uses: action/checkout@v4
