@@ -15,3 +15,7 @@
 .pf-c-form-control:focus-visible {
 	outline: none;
 }
+
+.required {
+	color: var(--color-text);
+}

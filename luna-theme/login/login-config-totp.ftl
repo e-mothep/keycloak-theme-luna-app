@@ -12,7 +12,7 @@
             <li>
                 <p>1 .${msg("loginTotpStep1")}</p>
 
-                <ul id="kc-totp-supported-apps">
+                <ul id="kc-totp-supported-apps" class="spacing-md left">
                     <#list totp.supportedApplications as app>
                         <li>${msg(app)}</li>
                     </#list>
@@ -21,12 +21,12 @@
 
 						<li>
 								<p>2. ${msg("loginTotpStep2")}</p>
-								<img id="kc-totp-secret-qr-code" src="data:image/png;base64, ${totp.totpSecretQrCode}" alt="Figure: Barcode"><br/>
-								<p><a href="${totp.manualUrl}" id="mode-manual">${msg("loginTotpUnableToScan")}</a></p>
+								<img id="kc-totp-secret-qr-code" src="data:image/png;base64, ${totp.totpSecretQrCode}" alt="Figure: Barcode" class="spacing-md left"><br/>
+								<p class="spacing-md left"><a href="${totp.manualUrl}" id="mode-manual">${msg("loginTotpUnableToScan")}</a></p>
 						</li>
             <li>
                 <p>3. ${msg("loginTotpStep3")}</p>
-                <p>${msg("loginTotpStep3DeviceName")}</p>
+                <p class="spacing-md left">${msg("loginTotpStep3DeviceName")}</p>
             </li>
         </ul>
 

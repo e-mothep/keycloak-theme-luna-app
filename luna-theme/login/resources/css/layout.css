@@ -34,3 +34,19 @@ div#kc-info-message {
 	align-items: center;
 	justify-content: center;
 }
+
+/* CUSTOM */
+.spacing-md {
+	margin: 1em;
+	
+	&.left {
+		margin: 0;
+		margin-left: 1em;
+	}
+}
+
+.instruction {
+	text-align: center;
+}
+
+

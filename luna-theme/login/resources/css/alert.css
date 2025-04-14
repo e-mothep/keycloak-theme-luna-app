@@ -1,5 +1,6 @@
 div.pf-c-alert {
 	border-top: none;
+	margin-bottom: 1em;
 
 	span {
 		color: var(--color-text);
