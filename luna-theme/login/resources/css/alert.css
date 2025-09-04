@@ -19,3 +19,12 @@ div.pf-c-alert {
 		background-color: var(--color-tertiary) !important;
 	}
 }
+
+.luna-alert {
+  background-color: var(--color-error) !important;
+  color: white !important;
+  font-size: 1rem;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 1em;
+}

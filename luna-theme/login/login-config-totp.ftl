@@ -22,7 +22,6 @@
 						<li>
 								<p>2. ${msg("loginTotpStep2")}</p>
 								<img id="kc-totp-secret-qr-code" src="data:image/png;base64, ${totp.totpSecretQrCode}" alt="Figure: Barcode" class="spacing-md left"><br/>
-								<p class="spacing-md left"><a href="${totp.manualUrl}" id="mode-manual">${msg("loginTotpUnableToScan")}</a></p>
 						</li>
             <li>
                 <p>3. ${msg("loginTotpStep3")}</p>
@@ -67,6 +66,8 @@
                             ${kcSanitize(messagesPerField.get('userLabel'))?no_esc}
                         </span>
                     </#if>
+
+                    <p class="spacing-md left">${msg("deviceNameDescription")}</p>
                 </div>
             </div>
 
