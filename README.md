@@ -41,5 +41,4 @@ To test the changes on the theme, you must manually in keycloak create a user wi
 ## Deployment
 
 - Commit and push on master, the CI/CD will build a release.
-- Then you must contact the Keycloak administrator to install the release in Keycloak
-- Keycloak must be restarted in order to apply the changes.
+- Then you must contact the Keycloak administrator to restart the Luna Keycloak which fetch the latest release on GitHub.
