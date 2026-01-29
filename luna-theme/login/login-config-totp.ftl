@@ -25,7 +25,7 @@
 						</li>
             <li>
                 <p>3. ${msg("loginTotpStep3")}</p>
-                <p class="spacing-md left">${msg("loginTotpStep3DeviceName")}</p>
+                <p class="spacing-md left hidden">${msg("loginTotpStep3DeviceName")}</p>
             </li>
         </ul>
 
@@ -51,13 +51,13 @@
                 <#if mode??><input type="hidden" id="mode" name="mode" value="${mode}"/></#if>
             </div>
 
-            <div class="${properties.kcFormGroupClass!}">
+            <div class="${properties.kcFormGroupClass!} hidden">
                 <div class="${properties.kcInputWrapperClass!}">
                     <label for="userLabel" class="control-label">${msg("loginTotpDeviceName")}</label> <#if totp.otpCredentials?size gte 1><span class="required">*</span></#if>
                 </div>
 
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" class="${properties.kcInputClass!}" id="userLabel" name="userLabel" autocomplete="off"
+                    <input type="text" class="${properties.kcInputClass!}" value="double-authentification" id="userLabel" name="userLabel" autocomplete="off"
                            aria-invalid="<#if messagesPerField.existsError('userLabel')>true</#if>" dir="ltr"
                     />
 

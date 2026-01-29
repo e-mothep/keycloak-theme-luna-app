@@ -49,4 +49,6 @@ div#kc-info-message {
 	text-align: center;
 }
 
-
+.hidden {
+	display: none;
+}
