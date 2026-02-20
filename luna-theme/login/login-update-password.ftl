@@ -11,21 +11,37 @@
             <div class="${properties.kcFormGroupClass!}">
                 <div class="${properties.kcLabelWrapperClass!}">
                     <label for="password-new" class="${properties.kcLabelClass!}">${msg("passwordNew")}</label>
-										<input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}"
-													 autofocus autocomplete="new-password"
-													 aria-invalid="<#if messagesPerField.existsError('password','password-confirm')>true</#if>"
-										/>
+										<div class="password-container">
+												<input type="password" id="password-new" name="password-new" class="${properties.kcInputClass!}"
+															 autofocus autocomplete="new-password"
+															 aria-invalid="<#if messagesPerField.existsError('password','password-confirm')>true</#if>"
+												/>
+											<button class="${properties.kcFormPasswordVisibilityButtonClass!}" type="button" aria-label="${msg("showPassword")}"
+															aria-controls="password-new" data-password-toggle tabindex="4"
+															data-icon-show="${properties.kcFormPasswordVisibilityIconShow!}" data-icon-hide="${properties.kcFormPasswordVisibilityIconHide!}"
+															data-label-show="${msg('showPassword')}" data-label-hide="${msg('hidePassword')}">
+													<i class="${properties.kcFormPasswordVisibilityIconShow!}" aria-hidden="true"></i>
+											</button>
+										</div>
                 </div>
             </div>
 
             <div class="${properties.kcFormGroupClass!}">
                 <div class="${properties.kcLabelWrapperClass!}">
                     <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")}</label>
-										<input type="password" id="password-confirm" name="password-confirm"
-													 class="${properties.kcInputClass!}"
-													 autocomplete="new-password"
-													 aria-invalid="<#if messagesPerField.existsError('password-confirm')>true</#if>"
-										/>
+										<div class="password-container">
+											<input type="password" id="password-confirm" name="password-confirm"
+														 class="${properties.kcInputClass!}"
+														 autocomplete="new-password"
+														 aria-invalid="<#if messagesPerField.existsError('password-confirm')>true</#if>"
+											/>
+											<button class="${properties.kcFormPasswordVisibilityButtonClass!}" type="button" aria-label="${msg("showPassword")}"
+															aria-controls="password-confirm" data-password-toggle tabindex="4"
+															data-icon-show="${properties.kcFormPasswordVisibilityIconShow!}" data-icon-hide="${properties.kcFormPasswordVisibilityIconHide!}"
+															data-label-show="${msg('showPassword')}" data-label-hide="${msg('hidePassword')}">
+													<i class="${properties.kcFormPasswordVisibilityIconShow!}" aria-hidden="true"></i>
+											</button>
+										</div>
                 </div>
             </div>
 
